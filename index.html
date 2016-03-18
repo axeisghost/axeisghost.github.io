@@ -16,7 +16,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a ng-click="pageService.changeTab(0)" class="navbar-brand" href="">Brand</a>
+                    <a ng-click="pageService.changeTab(0)" class="navbar-brand" href="">
+                        <img src="img/avatar.png" height="100%">
+                    </a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav">
@@ -83,13 +85,106 @@
             </div>
             <div ng-if="pageService.focusedOrNot(3)">
                 <br/>
-                <iframe src="http://docs.google.com/gview?url=./document/Junxian_Wu_Resume.pdf&embedded=true" 
-                style="width:100%;" frameborder="0"></iframe>
+                <iframe src="http://docs.google.com/gview?url=axeisghost.github.io/document/Junxian_Wu_Resume.pdf&embedded=true" 
+                style="width:100%; height:1000px;" frameborder="0"></iframe>
+            </div>
+            <div class="list-group" ng-if="pageService.focusedOrNot(4)">
+                </br>
+                <span class="list-group-item">
+                    <h2 class="list-group-item-heading">
+                        Machine Learning on Customer Reviews to Predict Business Categories
+                    </h2>
+                    <br/>
+                    <div class="row container">
+                        <div class="col-md-5">
+                            <p style="font-family: 'Times New Roman';border: 1px solid">
+                                    pizza, chinese, rice, italian, bread, waitress, pasta, sandwich, salad, burger, bar, meal, server, dinner, soup, dish, service, table, shrimp, fried, dishes, good, fries, sauce, place, food, restaurant, wine, came, breakfast, plate, cheese, drinks, great, menu, night, steak, chicken, prices, excellent, went, try, nice, cooked, atmosphere, ok, delicious, served, asked, drink, friend, think, beer, friendly, coffee, dining, lunch, price, wasnt, ordered, restaurants, special, definitely, selection, check, did, experience, said, best, say, little, friends, bad, fish, feel, people, flavor, really, going, family, recommend, pretty, meat, time, home, favorite, perfect, decent, large, love, old, tried, visit, looked, local, worth, beef, huge, awesome, course
+                            </p>
+                            <p align="center" style = "font:small-caption">
+                                List of keywords after filtering in the review dataset
+                            </p>
+                        </div>
+                        <div class="col-md-7">
+                            <p class="list-group-item-text">
+                                A system was built to predict and suggest missing categories of a restaurant from Yelp.com solely based on customer reviews. 
+                            </p>
+                            <p class="list-group-item-text">
+                                To filter out significant keywords, the data was pre-processed with a NLP algorithm which calculated information gain per word and eliminate stop words. Then the system predicted the subcategories of restaurant businesses using an ensemble of Decision Tree, Bayes Network, K-NN and Neural Network algorithms based on statistics of keywords selected from the reviews.
+                            </p>
+                        </div>
+                    </div>
+                    <div align="right">
+                        <a href="https://docs.google.com/document/d/1ticKPjLtZ9KEQpY1AS8lzqKxYTsufgUwaA7k5vwB3j8/edit?usp=sharing" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-file fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </span>
+                <span class="list-group-item">
+                    <h2 class="list-group-item-heading">
+                        Android App development: Shopping with Friends
+                    </h2>
+                    <br/>
+                    <p class="list-group-item-text">
+                        An online mobile application in which registered users can share sales information with their friends.
+
+                        The application uses Firebase as backend database.
+                    </p>
+                    <p class="list-group-item-text">
+                        The application has following features:
+                    </p>
+                    <ul>
+                        <li>User Service: registered users can add other users as friend though email and username registered users can post their interested goods. registered users can share sales with their friends.</li>
+                        <li>Sales sharing: users can share sales with their friend with the good on sale, the price of good and the location of the sale</li>
+                        <li>Notification: user can receive notification when user's friend send user's a sale that user is interested in.</li>
+                    </ul>
+                    <div align="right">
+                        <a href="https://github.com/axeisghost/cpc-documentary" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </span>
+                <span class="list-group-item">
+                    <h2 class="list-group-item-heading">
+                        On Going Project: College Class Scheduler "Auto Scheduler"
+                    </h2>
+                    <br/>
+                    <p class="list-group-item-text">
+                        Class registration has always been an important issue for students. The known course
+                        arrangement web­app, CourseOff, can hardly help students find the best schedules to cater to
+                        their personal needs. Therefore, our team decides to build a web application which can
+                        automatically generate schedules for students based on their specific requirements. Our project,
+                        Auto­scheduler, is a web application that provides a convenient and efficient interface for college
+                        students to create their class schedules for the upcoming semester. Our application will provide
+                        the class information of different schools with the aid of CourseOff API, which means that our
+                        web application can be used by college students from different schools
+                    </p>
+                    <p class="list-group-item-text">
+                        The application is under development. The retrieval of course details was achieved and the basic template of
+                        HTML interface has been constructed. Right now, our team are working on the algorithm of scheduling classes
+                        with the model of Constrain Satisfaction Problem. Also, the backend Server and Database is nearly finished,
+                        more update can be viewed direactly from the Github repository.
+                    </p>
+                    <p class="list-group-item-text">
+                        The application is not published yet and we are still looking of hosting Server.
+                    </p>
+                    <div align="right">
+                        <a href="https://github.gatech.edu/syang327/juniordesign-teamtba.git" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </span>
             </div>
         </div>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
